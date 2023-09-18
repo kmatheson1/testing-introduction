@@ -14,3 +14,12 @@ def test_counter_adds_five():
 
     result = counter.report()
     assert result == "Counted to 5 so far."
+
+def test_counter_adds_multiple():
+    counter = Counter()
+    counter.add(5)
+    counter.add(2)
+    counter.add(1)
+
+    result = counter.report()
+    assert result == "Counted to 8 so far."
